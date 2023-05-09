@@ -170,6 +170,7 @@ input {
 
   label {
     font-size: 15px;
+    color: $Very-dark-violet;
   }
   
   .input {
@@ -362,18 +363,19 @@ input {
     left: 18%;
 
     .date-label {
+      margin-bottom: -20px;
       height: 70px;
       display: flex;
       gap: 5px;
     }
     .expmonth {
-      font-size: 40px;
+      font-size: 2rem;
     }
     .expdate {
-      font-size: 40px;
+      font-size: 2rem;
     }
     .security {
-      font-size: 40px;
+      font-size: 2rem;
     }
 
     .date-input {
@@ -399,7 +401,7 @@ input {
       padding-left: 20px;
     }
     label {
-      color: $Dark-grayish-violet;
+      color: $Very-dark-violet;
       font-size: 2rem;
     }
   
@@ -438,7 +440,7 @@ input {
         height: 80px;
         font-size: 2.4rem;
         text-align: center;
-        margin-left: 5px;
+        margin-left: -20px;
         border-radius: 10px;
         border: 1px solid $Dark-grayish-violet;
       }
@@ -450,8 +452,9 @@ input {
       flex-direction: column;
 
       #cvc {
-        width: 180px;
+        width: 220px;
         height: 80px;
+        margin-left: -48px;
         font-size: 2.4rem;
         border-radius: 10px;
         border: 1px solid $Dark-grayish-violet;
