@@ -92,7 +92,7 @@ const Form = ({
           <div className="date-input">
             <div className="flex-month">
               <input
-                type="number"
+                type="text"
                 {...methods.register("month", {
                   required: true,
                   validate: {
@@ -119,7 +119,7 @@ const Form = ({
             </div>
             <div className="flex-year">
               <input
-                type="number"
+                type="text"
                 {...methods.register("year", {
                   required: true,
                   validate: {
