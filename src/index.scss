@@ -391,7 +391,7 @@ input {
   
     .input {
       width: 95%;
-      height: 100px;
+      height: 80px;
       border-radius: 10px;
       font-size: 2.4rem;
       border: 1px solid $Dark-grayish-violet;
@@ -408,7 +408,7 @@ input {
         width: 130px;
         font-size: 2.4rem;
         text-align: center;
-        height: 100px;
+        height: 80px;
         border-radius: 10px;
         border: 1px solid $Dark-grayish-violet;
       }
@@ -421,7 +421,7 @@ input {
 
       #input-exp {
         width: 130px;
-        height: 100px;
+        height: 80px;
         font-size: 2.4rem;
         text-align: center;
         margin-left: 5px;
@@ -437,7 +437,7 @@ input {
 
       #cvc {
         width: 180px;
-        height: 100px;
+        height: 80px;
         font-size: 2.4rem;
         border-radius: 10px;
         border: 1px solid $Dark-grayish-violet;
@@ -454,7 +454,7 @@ input {
   }
   
   .btn {
-    height: 120px;
+    height: 100px;
     width: 99%;
     background: $Very-dark-violet;
     color: $White;
