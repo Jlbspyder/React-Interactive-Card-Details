@@ -6,7 +6,14 @@ $Light-grayish-violet: hsl(270, 3%, 87%);
 $Dark-grayish-violet: hsl(279, 6%, 55%);
 $Very-dark-violet: hsl(278, 68%, 11%);
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  background: $White;
   position: relative;
   font-family: $fontstack;
   font-size: 18px;
@@ -17,7 +24,7 @@ body {
     margin-top: -20px;
   }
   .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: hsl(228, 45%, 44%);  
   }
 }
 .bg {
@@ -44,7 +51,7 @@ body {
   .digits {
     width: 250px;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 8%;
   }
  
@@ -56,13 +63,13 @@ body {
 
   .name {
     position: absolute;
-    top: 55%;
+    top: 70%;
     left: 8%;
     color: $White;
   }
   .date {
     position: absolute;
-    top: 55%;
+    top: 70%;
     left: 80%;
     color: $White;
     letter-spacing: 1.2px;
@@ -77,7 +84,7 @@ body {
 
   p {
     position: absolute;
-    top: 37%;
+    top: 42%;
     left: 78%;
     font-weight: 100;
     font-size: 10px;
@@ -118,6 +125,7 @@ input {
     border-radius: 5px;
     border: 1px solid $Light-grayish-violet;
   }
+  
   #input-month {
     width: 50px;
     height: 30px;
@@ -213,7 +221,7 @@ input {
       font-size: 1rem;
       width: 500px;
       color: $Dark-grayish-violet;
-      margin: -20px 0 0 15px;
+      margin: 20px 0 0 15px;
     }
 }
 .thank-you {
@@ -249,29 +257,35 @@ input {
 
 @media only screen and (max-width: 414px) {
 
+  .container {
+    width: 760px;
+    height: 1500px;
+  }
+
   .showcase {
-    width: 300px;
-    height: 900px;
+    height: 1500px;
+    width: 750px;
+    padding: 0 10px;
+    margin: 0 auto;
+
+    .attribution { 
+      width: 500px;
+      margin-left: 150px;
+      font-size: 50px; 
+    }
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
   }
   .bg {
-    width: 760px;
+    width:770px;
     height: 470px;
    }
-   .attribution { 
-    position: absolute;
-    left: 40%;
-    top: 170%;
-    width: 500px;
-    height: 100px;
-    font-size: 50px; 
-  }
-  .attribution a { 
-    color: hsl(228, 45%, 44%); 
-  }
+   
   .front-card {
     position: absolute;
-    top: 30%;
-    left: 10%;
+    top: 18%;
+    left: 18%;
     z-index: 3;
   
     .logo {
@@ -289,7 +303,7 @@ input {
       width: 400px;
       position: absolute;
       font-size: 1.6rem;
-      top: 40%;
+      top: 50%;
       left: 8%;
     }
    
@@ -301,14 +315,14 @@ input {
   
     .name {
       position: absolute;
-      top: 55%;
+      top: 70%;
       left: 8%;
       font-size: 2rem;
       color: $White;
     }
     .date {
       position: absolute;
-      top: 55%;
+      top: 70%;
       left: 78%;
       color: $White;
       font-size: 2rem;
@@ -325,12 +339,12 @@ input {
   }
   .back-card {
     position: absolute;
-    top: 11%;
-    left: 45%;
+    top: 7%;
+    left: 50%;
   
     p {
       position: absolute;
-      top: 33%;
+      top: 41%;
       left: 75%;
       font-weight: 100;
       font-size: 1.5rem;
@@ -344,8 +358,8 @@ input {
     height: 500px;
     padding-left: 20px;
     position: absolute;
-    top: 65%;
-    left: 13%;
+    top: 43%;
+    left: 18%;
 
     .date-label {
       height: 70px;
@@ -475,13 +489,13 @@ input {
     width: 650px;
     height: 800px;
     position: absolute;
-    top: 65%;
+    top: 40%;
     left: 19%;
 
     h1 {
       font-size: 3rem;
       letter-spacing: 1rem;
-      margin-left: 90px;
+      margin: 0 0 50px 90px;
       color: $Very-dark-violet;
       }
       p {
@@ -493,7 +507,7 @@ input {
   }
   .thank-you {
     width: 150px;
-    margin: 10% 0 0 37%; 
+    margin: 12% 0 50px 37%; 
   }
   .btn-continue {
     height: 100px;
