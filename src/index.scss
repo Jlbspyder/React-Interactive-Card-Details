@@ -475,19 +475,20 @@ input {
     width: 650px;
     height: 800px;
     position: absolute;
-    top: 28%;
+    top: 65%;
     left: 19%;
 
     h1 {
-      font-size: 5rem;
-      margin-left: 70px;
+      font-size: 3rem;
+      letter-spacing: 1rem;
+      margin-left: 90px;
       color: $Very-dark-violet;
       }
       p {
         font-size: 2rem;
         width: 550px;
         color: $Dark-grayish-violet;
-        margin: -30px 0 0 55px;
+        margin: 20px 0 0 55px;
       }
   }
   .thank-you {
