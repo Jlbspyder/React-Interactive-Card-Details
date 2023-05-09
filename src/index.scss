@@ -269,7 +269,7 @@ input {
 
     .attribution { 
       width: 650px;
-      margin: 1000px 0 0 100px;
+      margin: 900px 0 0 100px;
       height: 50px;
       font-size: 25px; 
     }
@@ -374,13 +374,13 @@ input {
       gap: 5px;
     }
     .expmonth {
-      font-size: 3rem;
+      font-size: 2.2rem;
     }
     .expdate {
-      font-size: 3rem;
+      font-size: 2.2rem;
     }
     .security {
-      font-size: 3rem;
+      font-size: 2.2rem;
     }
 
     .date-input {
@@ -407,12 +407,12 @@ input {
     }
     label {
       color: $Very-dark-violet;
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin-bottom: 15px;
     }
   
     .input {
-      width: 630px;
+      width: 650px;
       height: 80px;
       border-radius: 10px;
       font-size: 2.4rem;
@@ -427,7 +427,7 @@ input {
       flex-direction: column;
 
       #input-month {
-        width: 120px;
+        width: 140px;
         font-size: 2.4rem;
         text-align: center;
         height: 80px;
@@ -442,7 +442,7 @@ input {
       flex-direction: column;
 
       #input-exp {
-        width: 120px;
+        width: 140px;
         height: 80px;
         font-size: 2.4rem;
         text-align: center;
@@ -458,9 +458,9 @@ input {
       flex-direction: column;
 
       #cvc {
-        width: 310px;
+        width: 330px;
         height: 80px;
-        margin-left: -130px;
+        margin-left: -110px;
         font-size: 2.4rem;
         border-radius: 10px;
         border: 1px solid $Dark-grayish-violet;
