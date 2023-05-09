@@ -29,14 +29,14 @@ const Form = ({
             {...methods.register("fullname", {
               required: true,
               pattern: /[A-Za-z]/,
-              validate: {
-                maxLength: (v) => v.length <= 24,
-              },
+              // validate: {
+              //   maxLength: (v) => v.length <= 24,
+              // },
             })}
             type="text"
             placeholder="e.g. Jane Appleseed"
             name="fullname"
-            maxLength={23}
+            maxLength={24}
             value={name}
             onChange={(e) => setName(e.target.value)}
             className="input"
@@ -44,9 +44,9 @@ const Form = ({
           {methods.formState?.errors?.fullname?.type === "required" && (
             <small>Can't be blank</small>
           )}
-          {methods.formState?.errors?.fullname?.type === "maxLength" && (
-            <small>Cant be longer than 23 characters</small>
-          )}
+          {/* {methods.formState?.errors?.fullname?.type === "maxLength" && (
+            <small>Cant be longer than 25 characters</small>
+          )} */}
         </div>
         <div className="digit-input">
           <label>CARD NUMBER</label>
@@ -57,8 +57,8 @@ const Form = ({
             {...methods.register("number", {
               required: true,
               validate: {
-                minLength: (v) => v.length === 19,
-                maxLength: (v) => v.length === 19,
+                // minLength: (v) => v.length === 19,
+                // maxLength: (v) => v.length === 19,
                 matchPattern: (v) => /^[0-9 ]+/.test(v),
               },
             })}
@@ -73,12 +73,12 @@ const Form = ({
           {methods.formState?.errors?.number?.type === "required" && (
             <small>Can't be blank</small>
           )}
-          {methods.formState?.errors?.number?.type === "minLength" && (
+          {/* {methods.formState?.errors?.number?.type === "minLength" && (
             <small>Must be 16digits</small>
           )}
           {methods.formState?.errors?.number?.type === "maxLength" && (
             <small>Must be 16digits</small>
-          )}
+          )} */}
           {methods.formState?.errors?.number?.type === "matchPattern" && (
             <small>Wrong format, numbers only</small>
           )}
@@ -96,7 +96,7 @@ const Form = ({
                 {...methods.register("month", {
                   required: true,
                   validate: {
-                    maxLength: (v) => v.length <= 2,
+                    // maxLength: (v) => v.length <= 2,
                     matchPattern: (v) => /^[0-9]+$/.test(v),
                   },
                 })}
@@ -110,9 +110,9 @@ const Form = ({
               {methods.formState?.errors?.month?.type === "required" && (
                 <small className="error">Can't be blank</small>
               )}
-              {methods.formState?.errors?.month?.type === "maxLength" && (
+              {/* {methods.formState?.errors?.month?.type === "maxLength" && (
                 <small className="error">Not more than 2 digits</small>
-              )}
+              )} */}
               {methods.formState?.errors?.month?.type === "matchPattern" && (
                 <small className="error">Numbers only</small>
               )}
@@ -123,7 +123,7 @@ const Form = ({
                 {...methods.register("year", {
                   required: true,
                   validate: {
-                    maxLength: (v) => v.length <= 2,
+                    // maxLength: (v) => v.length <= 2,
                     matchPattern: (v) => /^[0-9]+$/.test(v),
                   },
                 })}
@@ -137,9 +137,9 @@ const Form = ({
               {methods.formState?.errors?.year?.type === "required" && (
                 <small className="error">Can't be blank</small>
               )}
-              {methods.formState?.errors?.year?.type === "maxLength" && (
+              {/* {methods.formState?.errors?.year?.type === "maxLength" && (
                 <small className="error">Not more than 2 digits</small>
-              )}
+              )} */}
               {methods.formState?.errors?.year?.type === "matchPattern" && (
                 <small className="error">Numbers only</small>
               )}
@@ -149,8 +149,8 @@ const Form = ({
                 {...methods.register("security", {
                   required: true,
                   validate: {
-                    maxLength: (v) => v.length === 3,
-                    minLength: (v) => v.length === 3,
+                    // maxLength: (v) => v.length === 3,
+                    // minLength: (v) => v.length === 3,
                     matchPattern: (v) => /^[0-9]+$/.test(v),
                   },
                 })}
@@ -165,12 +165,12 @@ const Form = ({
               {methods.formState?.errors?.security?.type === "required" && (
                 <small className="error">Can't be blank</small>
               )}
-              {methods.formState?.errors?.security?.type === "maxLength" && (
+              {/* {methods.formState?.errors?.security?.type === "maxLength" && (
                 <small className="error">Must be 3 digits</small>
               )}
               {methods.formState?.errors?.security?.type === "minLength" && (
                 <small className="error">Must be 3 digits</small>
-              )}
+              )} */}
               {methods.formState?.errors?.security?.type === "matchPattern" && (
                 <small className="error">Numbers only</small>
               )}
