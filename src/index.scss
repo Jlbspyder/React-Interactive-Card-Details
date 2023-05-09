@@ -119,7 +119,7 @@ input {
   gap: 5px;
 
   #input-exp {
-    width: 50px;
+    width: 60px;
     height: 30px;
     margin-left: 5px;
     border-radius: 5px;
@@ -127,14 +127,15 @@ input {
   }
   
   #input-month {
-    width: 50px;
+    width: 60px;
     height: 30px;
     border-radius: 5px;
     border: 1px solid $Light-grayish-violet;
   }
   #cvc {
-    width: 100px;
+    width: 130px;
     height: 30px;
+    margin-left: 3px;
     border-radius: 5px;
     border: 1px solid $Light-grayish-violet;
   }
@@ -170,11 +171,12 @@ input {
 
   label {
     font-size: 15px;
+    margin-bottom: 5px;
     color: $Very-dark-violet;
   }
   
   .input {
-    width: 64%;
+    width: 75%;
     height: 30px;
     border-radius: 5px;
     border: 1px solid $Light-grayish-violet;
@@ -363,7 +365,7 @@ input {
     left: 18%;
 
     .date-label {
-      margin-bottom: -20px;
+      margin: 5px 0 -10px 0;
       height: 70px;
       display: flex;
       gap: 5px;
@@ -403,6 +405,7 @@ input {
     label {
       color: $Very-dark-violet;
       font-size: 2rem;
+      margin-bottom: 15px;
     }
   
     .input {
