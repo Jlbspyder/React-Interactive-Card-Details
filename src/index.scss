@@ -251,26 +251,21 @@ input {
 
   .showcase {
     width: 300px;
-    height: 1792px;
+    height: 100vh;
+    overflow: hidden;
+
   }
   .bg {
     width: 750px;
     height: 470px;
    }
    .attribution { 
-    position: absolute;
-    left: 40%;
-    top: 95%;
-    width: 500px;
-    height: 100px;
-    font-size: 50px; 
+    display: none;
   }
-  .attribution a { 
-    color: hsl(228, 45%, 44%); 
-  }
+  
   .front-card {
     position: absolute;
-    top: 14%;
+    top: 28%;
     left: 10%;
     z-index: 3;
   
@@ -325,7 +320,7 @@ input {
   }
   .back-card {
     position: absolute;
-    top: 5%;
+    top: 8%;
     left: 45%;
   
     p {
@@ -344,7 +339,7 @@ input {
     height: 500px;
     padding-left: 20px;
     position: absolute;
-    top: 32%;
+    top: 68%;
     left: 13%;
 
     .date-label {
@@ -391,7 +386,7 @@ input {
   
     .input {
       width: 95%;
-      height: 80px;
+      height: 100px;
       border-radius: 10px;
       font-size: 2.4rem;
       border: 1px solid $Dark-grayish-violet;
@@ -408,7 +403,7 @@ input {
         width: 130px;
         font-size: 2.4rem;
         text-align: center;
-        height: 80px;
+        height: 100px;
         border-radius: 10px;
         border: 1px solid $Dark-grayish-violet;
       }
@@ -421,7 +416,7 @@ input {
 
       #input-exp {
         width: 130px;
-        height: 80px;
+        height: 100px;
         font-size: 2.4rem;
         text-align: center;
         margin-left: 5px;
@@ -437,7 +432,7 @@ input {
 
       #cvc {
         width: 180px;
-        height: 80px;
+        height: 100px;
         font-size: 2.4rem;
         border-radius: 10px;
         border: 1px solid $Dark-grayish-violet;
