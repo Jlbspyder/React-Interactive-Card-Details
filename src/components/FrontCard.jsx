@@ -10,7 +10,7 @@ const FrontCard = ({ name, digits, month, year }) => {
       )}
       <div className="details">
         <div className="name">
-          {!name ? <h6>JANE APPLESSED</h6> : <h6>{name}</h6>}
+          {!name ? <h6>JANE APPLESEED</h6> : <h6>{name}</h6>}
         </div>
         <div className="date">
           {!month && !year ? (
