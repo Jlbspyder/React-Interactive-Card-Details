@@ -133,9 +133,8 @@ input {
     border: 1px solid $Light-grayish-violet;
   }
   #cvc {
-    width: 130px;
+    width: 140px;
     height: 30px;
-    margin-left: 3px;
     border-radius: 5px;
     border: 1px solid $Light-grayish-violet;
   }
@@ -150,8 +149,17 @@ input {
     margin-left: 5px;
     color: red;
   }
+  .error2 {
+    font-size: 8px;
+    margin-left: 5px;
+    color: red;
+  }
+  .error3 {
+    font-size: 8px;
+    margin-left: 5px;
+    color: red;
+  }
   .flex-month {
-    color: blue;
     display: flex;
     flex-direction: column;
   }
@@ -244,7 +252,7 @@ input {
 
 .btn {
   height: 35px;
-  width: 68%;
+  width: 75%;
   background: $Very-dark-violet;
   color: $White;
   border-radius: 5px;
@@ -258,11 +266,8 @@ input {
   background: #000;
 } 
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-                    only screen and (min--moz-device-pixel-ratio: 2),
-                    only screen and (-o-min-device-pixel-ratio: 2/1),
-                    only screen and (min-device-pixel-ratio: 2) {
 
+@media (max-width: 768px) {
   .container {
     height: 1100px;
 
@@ -392,8 +397,17 @@ input {
       margin: -15px 0 10px 0;
     }
     .error {
-      font-size: 25px;
-      margin-left: 10px;
+      font-size: 20px;
+      color: red;
+    }
+    .error2 {
+      font-size: 20px;
+      margin-left: -50px;
+      color: red;
+    }
+    .error3 {
+      font-size: 20px;
+      margin-left: -100px;
       color: red;
     }
   
@@ -456,7 +470,7 @@ input {
       flex-direction: column;
 
       #cvc {
-        width: 330px;
+        width: 320px;
         height: 80px;
         margin-left: -110px;
         font-size: 2.4rem;
