@@ -128,6 +128,7 @@ const Form = ({
                   required: true,
                   validate: {
                     matchPattern: (v) => /^[0-9]+$/.test(v),
+                    maxLength: (v) => v.length === 3
                   },
                 })}
                 type="text"
@@ -145,6 +146,9 @@ const Form = ({
               {methods.formState?.errors?.security?.type === "matchPattern" && (
                 <small className="error3">Numbers only</small>
               )}
+              {methods.formState?.errors?.security?.type === "maxLength" && (
+               <small className="error3">Must be 3 digits</small>
+          )}
             </div>
           </div>
         </div>
