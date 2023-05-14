@@ -52,6 +52,7 @@ const Form = ({
               required: true,
               validate: {
                 matchPattern: (v) => /^[0-9 ]+/.test(v),
+                maxLength: (v) => v.length === 19
               },
             })}
             name="number"
@@ -67,6 +68,9 @@ const Form = ({
           )}
           {methods.formState?.errors?.number?.type === "matchPattern" && (
             <small>Wrong format, numbers only</small>
+          )}
+          {methods.formState?.errors?.number?.type === "maxLength" && (
+            <small>Must be 16 digits</small>
           )}
         </div>
         <div className="expiry">
