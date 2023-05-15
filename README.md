@@ -16,8 +16,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/interactive-card-details-built-with-react-1hX-74KclG](https://www.frontendmentor.io/solutions/interactive-card-details-built-with-react-1hX-74KclG)
+- Live Site URL: [https://inspiring-pony-2cdd46.netlify.app/](https://inspiring-pony-2cdd46.netlify.app/)
 
 
 ### Built with
